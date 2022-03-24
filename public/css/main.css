@@ -7,28 +7,43 @@
 
 body {
   background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #606470;
+  position: sticky;
+  min-height: 50px;
+  top: 0;
+  /* background-color: #606470; */
+  /* background-color: #f7f7f7; */
+  background-color: #eeeeee;
   display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 main {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
+  flex: 1;
 }
 
 footer {
-    background-color: #3A4750;
-    text-align: center;
+  margin-top: auto;
+  background-color: #3a4750;
+  text-align: center;
 }
 
 .footer-text {
-    color: white;
-    padding: 1rem;
+  color: white;
+  padding: 1rem;
 }
 
 .fim_uhk_logo {
+  position: absolute;
+  left: 0;
   padding: 0.5rem;
   max-width: 20rem;
 }
@@ -39,7 +54,7 @@ footer {
 
 .hamburger {
   padding-top: 0.5rem;
-  margin-left: 1rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -65,15 +80,19 @@ footer {
   padding: 0.5rem 1rem;
   margin: 0.4rem 1rem;
   border-radius: 5px;
+  font-weight: 500;
   cursor: pointer;
-  background-color: #323643;
-  color: #f7f7f7;
+  /* background-color: #323643; */
+  background-color: #e0e0e0;
+  /* color: #f7f7f7; */
+  color: #3a3e4d;
   transition: all 100ms;
 }
 
 .main_nav__link:hover {
   /* color: #93DEFF; */
-  background-color: #3a3e4d;
+  /* background-color: #3a3e4d; */
+  background-color: #d3d3d3;
 }
 
 .active_link {
@@ -81,7 +100,7 @@ footer {
 }
 
 .project_section {
-  padding: 1rem 1rem 0 1rem;
+  padding: 2.5rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,28 +160,28 @@ footer {
 }
 
 .first_workshop__item--description {
-    padding-top: 0.5rem;
-    font-weight: 300;
+  padding-top: 0.5rem;
+  font-weight: 300;
 }
 
 .first_workshop__item--dates_title_wrapper {
-    margin-top: 1rem;
-    border-left: 3px solid #009fdf;
+  margin-top: 1rem;
+  border-left: 3px solid #009fdf;
 }
 
 .first_workshop__item--dates {
-    padding-left: 0.5rem;
-    font-weight: 500;
+  padding-left: 0.5rem;
+  font-weight: 500;
 }
 
 .first_workshop__item--date {
-    padding-top: 0.5rem;
-    font-weight: 600;
+  padding-top: 0.5rem;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
   header {
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .hamburger {
@@ -173,5 +192,11 @@ footer {
   }
   .mobile_main_nav {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    justify-content: center;
   }
 }
