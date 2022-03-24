@@ -1,118 +1,148 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: #FAFAFA;
+  background-color: #f7f7f7;
 }
 
 header {
-    background-color: #606470;
-    display: flex;
+  background-color: #606470;
+  display: flex;
 }
 
 .fim_uhk_logo {
-    padding: 0.5rem;
-    max-width: 20rem;
+  padding: 0.5rem;
+  max-width: 20rem;
 }
 
 .mobile_main_nav {
-    position: fixed;
-} 
+  position: fixed;
+}
 
 .hamburger {
-    padding-top: 0.5rem;
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hamburger_strip {
-    width: 2rem;
-    height: 0.2rem;
-    margin-bottom: 0.5rem;
-    background-color: #009fdf;
+  width: 2rem;
+  height: 0.2rem;
+  margin-bottom: 0.5rem;
+  background-color: #009fdf;
 }
 
 .main_nav {
-    display: none;
+  display: none;
 }
 
 .main_nav__links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .main_nav__link {
-    padding: 0.5rem 1rem;
-    margin: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #323643;
-    color: #F7F7F7;
-    transition: all 100ms;
+  padding: 0.5rem 1rem;
+  margin: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #323643;
+  color: #f7f7f7;
+  transition: all 100ms;
 }
 
 .main_nav__link:hover {
-    /* color: #93DEFF; */
-    background-color: #3a3e4d;
+  /* color: #93DEFF; */
+  background-color: #3a3e4d;
 }
 
 .active_link {
-    color: #009fdf;
+  color: #009fdf;
 }
 
 .project_section {
-    padding: 1rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project_name_label {
-    font-weight: 400;
-    font-style: italic;
-    color: #323643;
+  font-weight: 400;
+  font-style: italic;
+  color: #323643;
 }
 
 .project_name {
-    display: inline-block;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 250%;
-    text-align: center;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 250%;
+  text-align: center;
 }
 
 .project_description {
-    padding-top: 1rem;
-    max-width: 600px;
-    text-align: center;
+  padding-top: 1rem;
+  max-width: 600px;
+  text-align: center;
 }
 
 .workshop_section {
-    
-}
-.workshop_section__content_wrapper {
-    width: 500px;
-    background-color: #FAFAFA;
+  padding: 4rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media(min-width: 768px) {
-    header {
-        justify-content: center;
-    }
-    
-    .hamburger {
-        display: none;
-    }
-    .main_nav {
-        display: block;
-    }   
-    .mobile_main_nav {
-        display: none;
-    } 
+.workshop_section__content_wrapper {
+  max-width: 500px;
+}
+
+.first_workshop__item {
+  padding: 1rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+
+.first_workshop__item--title_wrapper {
+  border-left: 3px solid #009fdf;
+}
+
+.first_workshop__item--title_label {
+  padding-left: 0.5rem;
+  font-style: italic;
+  font-size: 100%;
+  color: #3a3e4d;
+}
+
+.first_workshop__item--title {
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+.first_workshop__item--description {
+    padding-top: 0.5rem;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .main_nav {
+    display: block;
+  }
+  .mobile_main_nav {
+    display: none;
+  }
 }
