@@ -1,26 +1,29 @@
-const path = require('path')
+const path = require("path");
 
-const express = require('express')
+const express = require("express");
 
 // Routes
-const sharedRoutes = require('./routes/sharedRoutes')
+// const sharedRoutes = require("./routes/sharedRoutes");
 
 // Enabling .env variables
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 
-const app = express()
+const app = express();
 
+app.set("views", "views");
+app.set("view engine", "ejs");
 
-app.set('views', 'views')
-app.set('view engine', 'ejs')
+// set css & js of EJS pages public
+app.use(express.static(path.join(__dirname, "public")));
+// serve react build
+app.use(express.static(path.join(__dirname, "react_build")));
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.listen(process.env.PORT);
 
-app.listen(process.env.PORT)
+// app.use(sharedRoutes);
 
-app.use(sharedRoutes)
-
-app.use((req, res, next) => {
-    res.redirect('/prvni-workshop')
+// Serving react app
+app.use((req, res) => {
+	res.sendFile(path.resolve(__dirname, 'react_build', 'index.html'))
 })

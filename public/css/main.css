@@ -18,7 +18,7 @@ header {
   top: 0;
   /* background-color: #606470; */
   /* background-color: #f7f7f7; */
-  background-color: #eeeeee;
+  background-color: #e6e6e6;
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
@@ -41,6 +41,14 @@ footer {
   padding: 1rem;
 }
 
+.backdrop {
+  position: fixed;
+  background-color: #3a47507c;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
 .fim_uhk_logo {
   position: absolute;
   left: 0;
@@ -50,6 +58,31 @@ footer {
 
 .mobile_main_nav {
   position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.mobile_main_nav__links {
+  list-style: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.mobile_main_nav__link {
+  padding: 1rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #d6d6d6;
+  color: #3a3e4d;
+}
+
+.mobile_main_nav__link:not(:last-child) {
+  border-bottom: 2px solid #009fdf;
 }
 
 .hamburger {
@@ -83,7 +116,7 @@ footer {
   font-weight: 500;
   cursor: pointer;
   /* background-color: #323643; */
-  background-color: #e0e0e0;
+  background-color: #d6d6d6;
   /* color: #f7f7f7; */
   color: #3a3e4d;
   transition: all 100ms;
@@ -92,7 +125,7 @@ footer {
 .main_nav__link:hover {
   /* color: #93DEFF; */
   /* background-color: #3a3e4d; */
-  background-color: #d3d3d3;
+  background-color: #cccccc;
 }
 
 .active_link {
