@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf163b6a.css",
-    "main.js": "/static/js/main.2c6dbba9.js",
+    "main.css": "/static/css/main.7a5bdf70.css",
+    "main.js": "/static/js/main.76549e53.js",
     "static/js/787.50635580.chunk.js": "/static/js/787.50635580.chunk.js",
-    "static/media/fim-uhk-cs_hor.svg": "/static/media/fim-uhk-cs_hor.112dc1d78948c9905a52ae99455d4365.svg",
+    "static/media/artisec_pod_zamkem.jpg": "/static/media/artisec_pod_zamkem.ae00d440afd39d9d85ee.jpg",
+    "static/media/CLAIM_LOGO_RGB.png": "/static/media/CLAIM_LOGO_RGB.0534162de0cb48ecffaf.png",
+    "static/media/plus-inovace_Logo-barva-negativ_RGB.jpg": "/static/media/plus-inovace_Logo-barva-negativ_RGB.b231fad21a6c061d95b0.jpg",
     "index.html": "/index.html",
-    "main.bf163b6a.css.map": "/static/css/main.bf163b6a.css.map",
-    "main.2c6dbba9.js.map": "/static/js/main.2c6dbba9.js.map",
+    "main.7a5bdf70.css.map": "/static/css/main.7a5bdf70.css.map",
+    "main.76549e53.js.map": "/static/js/main.76549e53.js.map",
     "787.50635580.chunk.js.map": "/static/js/787.50635580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf163b6a.css",
-    "static/js/main.2c6dbba9.js"
+    "static/css/main.7a5bdf70.css",
+    "static/js/main.76549e53.js"
   ]
 }
